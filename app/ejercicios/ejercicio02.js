@@ -24,4 +24,14 @@ siguiente formato por cada ítem:
 */
 
 //const disponiblesYValiosos = productos.filter(p => p.stock && p.precio > precioMin);
-const criticosElectricidad = inventario.filter();
+//const criticosElectricidad = inventario.filter();
+
+// SOLUCIÓN DE Joaquín: 
+const criticosElectricidad = inventario.filter(C => C.categoria ==='Electricidad' && C.stock === 0 );
+console.log('\n Productos de Categoria Electricidad y sin stock \n');
+console.table(criticosElectricidad);
+ 
+criticosElectricidad.forEach(producto => {
+    console.log(`FALTANTE DE STOCK DEL PRODUCTO '${producto.nombre}'`);
+});
+ 
