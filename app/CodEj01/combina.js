@@ -5,7 +5,7 @@
 const transacciones = [   // ARRAY.
   { id: 'T1', cliente: 'Juan', monto: 1500, estado: 'APROBADA' },
   { id: 'T2', cliente: 'María', monto: 3000, estado: 'RECHAZADA' },
-  { id: 'T3', cliente: 'Pedro', monto: 800, estado: 'APROBADA' },
+  { id: 'T3', cliente: 'Pedro', monto: "800", estado: 'APROBADA' },
   { id: 'T4', cliente: 'Ana', monto: 2200, estado: 'PENDIENTE' },
   { id: 'T5', cliente: 'Sofia', monto: 1200, estado: 'APROBADA' }   //5 elementos, objeto.
 ];
