@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Promise</h1>
+<h2>The fetch() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+fetch("https://cantone.com.ar/datos.txt")
+.then(function(response) {
+  return response.text();
+})
+.then(function(data) {
+  myDisplayer(data);
+})
+.catch(function(error) {
+  myDisplayer(error);
+});
+
+// Funtion to display any text
+function myDisplayer(text) {
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
+
+<!--
+location /datos.txt {
+    add_header Access-Control-Allow-Origin *;
+}
+-->
