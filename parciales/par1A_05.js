@@ -14,3 +14,22 @@ const selectA = `<select id="sel1" class="opciones">\n
         ${opcionesSelect1.map(aux => `<option value=${aux}>${aux}</option>`).join('\n')}
         </select>`;
 console.log(selectA);                
+
+const fs = require('fs').promises;
+
+async function writeFileExample() {
+  try {
+    // Write text to a file
+    await fs.writeFile('ejemplo.txt', 'NUEVO CONTENIDO', 'utf8');
+
+    // Write JSON data
+    const data = { name: 'John', age: 30, city: 'New York' };
+    await fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8');
+
+    console.log('Archivo creado OK');
+  } catch (err) {
+    console.error('Error al crear archivo', err);
+  }
+}
+
+writeFileExample();
