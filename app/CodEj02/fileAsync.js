@@ -3,7 +3,7 @@ const fs = require('fs');
 
 
 
-console.log('1. Starting async read...');
+console.log('1. Arranca lectura asíncrona...');
 
 //const data = fs.readFileSync('myfile.txt', 'utf8');
 
@@ -13,8 +13,8 @@ console.log('1. Starting async read...');
 
 fs.readFile('myfile.txt', 'utf8', (err, data) => {
               if (err) throw err;
-              console.log('2. File contents:', data);
+              console.log('2. Contenido:', data);
             }
 );
 
-console.log('3. Done starting read operation');
+console.log('3. Inicio de lectura finalizado');
