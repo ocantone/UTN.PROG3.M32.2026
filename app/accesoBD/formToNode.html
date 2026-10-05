@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta Cliente - Backend Node.js</title>
+    <style>
+        body { font-family: sans-serif; margin: 2rem; }
+        .card { border: 1px solid #ccc; padding: 1rem; margin-top: 1rem; width: 300px; border-radius: 8px; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Buscar Cliente (Backend Node.js)</h2>
+    <form id="formBusqueda">
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" required placeholder="Ej: 12345678">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="appNode.js"></script>
+</body>
+</html>
