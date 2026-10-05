@@ -1,1 +1,3 @@
 01.UTN.lnk
+node_modules/
+**/node_modules/

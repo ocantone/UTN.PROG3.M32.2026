@@ -17,7 +17,7 @@ const pool = mysql.createPool({
 
 app.get('/api/clientes/:dni', (req, res) => {
   const { dni } = req.params;
-
+//  Promesa   :
   pool.query('SELECT dni, nombre, email FROM clientes WHERE dni = ?', [dni])
     .then(([rows]) => {
       if (rows.length === 0) {

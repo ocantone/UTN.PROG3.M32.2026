@@ -1,4 +1,10 @@
-fetch("https://cantoneeeeee.com.ar/api/datos2.txt")
+/**
+ * Con fetch() abrimos un flujo de datos desde un origen (una URL en este caso)
+ * y nos devuelve una PROMESA hasta finalizar la tarea (fullfilled o rejected).
+ * Mientras tanto continua con la resolución.
+ */
+
+fetch("https://cantone.com.ar/api/datos2.txt")
   .then(   res => res.text()    )   //CALLBACK 
   .then(data => console.log(data))
   .catch(err => {

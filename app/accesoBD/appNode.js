@@ -1,3 +1,7 @@
+/**
+ *  appNode.js es una gran CALLBACK que se ejecuta al producirse el evento  
+ *  onClick sobre el ojeto tipo button llamado submit.
+ */
 document.getElementById('formBusqueda').addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -5,7 +9,7 @@ document.getElementById('formBusqueda').addEventListener('submit', (event) => {
     const divResultado = document.getElementById('resultado');
 
     divResultado.innerHTML = '<p>Cargando...</p>';
-
+// Promesa inicial:
     fetch(`http://localhost:3000/api/clientes/${encodeURIComponent(dni)}`)
         .then(response => {
             if (response.status === 404) {
