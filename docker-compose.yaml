@@ -1,3 +1,5 @@
+#Para correr servidores: 
+#> docker compose up -d
 services:
 
   php:
