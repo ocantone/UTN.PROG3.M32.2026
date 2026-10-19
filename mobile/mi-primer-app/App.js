@@ -3,11 +3,11 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
 export default function App() {
  return (
- <View style={styles.container}>
- <StatusBar barStyle="dark-content" />
- <Text style={styles.titulo}>¡Hola Mundo!</Text>
- <Text style={styles.subtitulo}>Mi primera app en React Native + Expo</Text>
- </View>
+    <View style={styles.container}>
+        <StatusBar barStyle="dark-content" />
+        <Text style={styles.titulo}>Programación III</Text>
+        <Text style={styles.subtitulo}>Desarrollo de apps en React Native + Expo</Text>
+    </View>
  );
 }
 
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
  },
  subtitulo: {
  fontSize: 16,
- color: '#7f8c8d',
+ color: '#272929',    //  000000   a FFFFFF  (24 bits = 16 millones colores).
  textAlign: 'center',
  },
 });
