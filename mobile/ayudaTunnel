@@ -1,0 +1,4 @@
+
+taskkill /F /IM node.exe
+npm install --save-dev @expo/ngrok
+npx expo start --tunnel
