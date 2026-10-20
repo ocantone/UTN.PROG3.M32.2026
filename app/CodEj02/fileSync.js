@@ -1,3 +1,5 @@
+//Lee myfile.txt de forma síncrona
+
 const fs = require('fs');
 
 console.log('1. Starting sync read...');

@@ -1,7 +1,5 @@
+//Lee myfile.txt de forma asincrónica
 const fs = require('fs');
-
-
-
 
 console.log('1. Arranca lectura asíncrona...');
 
